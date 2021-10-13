@@ -2,6 +2,8 @@
     <head>
         <meta charset="UTF-8">
 
+        <script src="js/script.js"></script>
+
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
     <body>
@@ -11,42 +13,42 @@
 			<table>
 				<tr>
 					<td> 
-						<input class="campo" type="text" placeholder="Nome"> 
+						<input class="campo" type="text" placeholder="Nome" id="nome"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo" type="text" placeholder="Sobrenome"> 
+						<input class="campo" type="text" placeholder="Sobrenome" id="sobrenome"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo campo-erro" type="text" placeholder="E-mail"> 
+						<input class="campo" type="text" placeholder="E-mail" id="email"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo" type="text" placeholder="Matricula"> 
+						<input class="campo" type="text" placeholder="Matricula" id="matricula"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo" type="text" placeholder="Usuário"> 
+						<input class="campo" type="text" placeholder="Usuário" id="usuario"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo" type="password" placeholder="Senha"> 
+						<input class="campo" type="password" placeholder="Senha" id="senha"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<input class="campo" type="password" placeholder="Confirmar Senha"> 
+						<input class="campo" type="password" placeholder="Confirmar Senha" id="confirmarSenha"> 
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<button class="botao">Salvar</button>
+						<button class="botao" onclick="cadastrar()">Salvar</button>
 					</td>
 				</tr>
 			</table>
