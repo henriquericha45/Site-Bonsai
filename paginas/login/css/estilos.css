@@ -26,6 +26,6 @@
     cursor: pointer;
 }
 
-button:hover {
+.botao button:hover {
     background-color: #04B486;
 }

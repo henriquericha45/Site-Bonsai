@@ -52,7 +52,7 @@ html, body {
 }
 
 .imagem-fundo {
-    background-image: url(https://gooutside.com.br/wp-content/uploads/sites/3/2018/10/shutterstock_1114844327.jpg);
+    background-image: url(https://blog.giulianaflores.com.br/wp-content/uploads/2021/01/significado-do-bonsai-capa.jpg);
     width: 100%;
     height: 900px;
     background-repeat: no-repeat;
@@ -61,8 +61,8 @@ html, body {
 
 .texto {
     position: absolute;
-    left: 45%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
 }
 
 .campo {
