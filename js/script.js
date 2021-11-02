@@ -1,9 +1,9 @@
-var listaProdutos = [[0, 'Bonsai 1', 'bonsai1.jpeg', false],
-                     [1, 'Bonsai 2', 'bonsai2.jpeg', false],
-                     [2, 'Bonsai 3', 'bonsai3.jpeg', false], 
-                     [3, 'Bonsai 4', 'bonsai4.jpeg', false], 
-                     [4, 'Bonsai 5', 'bonsai5.jpeg', false], 
-                     [5, 'Bonsai 6', 'bonsai6.jpeg', false]];
+var listaProdutos = [[0, 'Jabuticaba Sabará', 'bonsai1.jpeg', false],
+                     [1, 'Pyracantha', 'bonsai2.jpeg', false],
+                     [2, 'Bougainville', 'bonsai3.jpeg', false], 
+                     [3, 'Caliandra', 'bonsai4.jpeg', false], 
+                     [4, 'Jabuticaba Híbrida', 'bonsai5.jpeg', false], 
+                     [5, 'Ligustro', 'bonsai6.jpeg', false]];
                      
 var carrinho = [];
 
