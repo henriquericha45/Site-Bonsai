@@ -5,6 +5,8 @@ var listaProdutos = [[0, 'Bonsai 1', 'bonsai1.jpeg', false],
                      [4, 'Bonsai 5', 'bonsai5.jpeg', false], 
                      [5, 'Bonsai 6', 'bonsai6.jpeg', false]];
                      
+var carrinho = [];
+
 window.onload = function(){
     montarCardProdutos();
 }
