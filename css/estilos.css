@@ -1,19 +1,48 @@
 body {
     margin: 0px;
+    font-size: 1.1rem;
 }
 
 .cabecalho {
     background-color: rgb(0, 0, 0);
     color: white;
-    height: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+}
+
+.header {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    padding: 20px;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu {
-    background-color: rgb(20, 20, 20);
-    color: black;
-    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: #0097A7;
 }
 
 .botao-cabecalho {
@@ -22,15 +51,19 @@ body {
 }
 
 .container {
-    padding: 10px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    justify-items: center;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    width: 600px;
 }
 
 .logo {
-    width: 10%;
+    height: 70px;
+    width: 70px;
+    background-image: url(/imagens/logo_bonsai.png);
+    background-color: rgb(20, 20, 20);
 }
 
 .foto-logo {
@@ -81,27 +114,6 @@ body {
     border-radius: 2px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3px;
-}
-
-
-
-a {
-    cursor: pointer;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #0097A7;
-    color: #ffffff;
-    border-radius: 15px;
-  }
-
-a:active {
-    color: blue;
 }
 
 .botao-mid {
