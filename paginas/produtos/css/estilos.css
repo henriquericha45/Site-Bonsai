@@ -1,19 +1,52 @@
 body {
     margin: 0px;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .cabecalho {
     background-color: rgb(0, 0, 0);
     color: white;
-    height: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+}
+
+.header {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    padding: 20px;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu {
-    background-color: rgb(20, 20, 20);
-    color: black;
-    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: #0097A7;
 }
 
 .botao-cabecalho {
@@ -22,171 +55,19 @@ body {
 }
 
 .container {
-    padding: 10px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    justify-items: center;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .logo {
-    width: 10%;
-}
-
-.foto-logo {
-    background-image: url(../imagens/logo_bonsai.png);
-    width: 70px;
+    margin-left: 50px;
     height: 70px;
-}
-
-.opcoes {
-    width: 80%;
-    background-color: rgb(30, 30, 30);
-    padding-top: 25px;
-    height: 43px;
-    border-radius: 15px;
-}
-
-.busca {
-    width: 10%;
-    color: white;
-}
-
-.imagem-fundo {
-    background-image: url(https://blog.giulianaflores.com.br/wp-content/uploads/2021/01/significado-do-bonsai-capa.jpg);
-    width: 100%;
-    height: 115%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.texto {
-    color: white;
-    position: absolute;
-    top: 40%;
-    width: 200px;
-    height: 100px;
-    width: 100%;
-    font-size: 30px;
-    text-shadow: 2px 2px 10px black;
-}
-
-.campo {
-    width: 250px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid 1px #ccc;
-    border-radius: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 3px;
-}
-
-
-
-a {
-    cursor: pointer;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #0097A7;
-    color: #ffffff;
-    border-radius: 15px;
-  }
-
-a:active {
-    color: blue;
-}
-
-.botao-mid {
-    cursor: pointer;
-    word-break: keep-all;
-    padding: 10px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    border: none;
-}
-
-.botao-mid:hover {
-    padding: 10px;
-    border: none;
-    background-color: #0097A7;
-    color: white;
-    border-radius: 10px;
-}
-
-.compras {
-    height: 100%;
+    width: 70px;
+    background-image: url(/imagens/logo_bonsai.png);
     background-color: rgb(20, 20, 20);
-    color: white;
-}
-
-#divProdutos{
-    width: 100%;
-    height: 310px;
-}
-
-.div-card{
-    width: 200px;
-    height: auto;
-    background-color: burlywood;
-    border-radius: 10px;
-    float: left;
-    margin: 5px;
-    border: solid 2px white;
-}
-
-.div-card-img img{
-    width: 100%;
-    height: 180px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.div-card-descricao{
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-    height: 30px;
-    padding-top: 10px;
-    background-color: rgb(30, 30, 30);
-}
-
-.div-card-preco{
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-    height: 30px;
-    padding-top: 10px;
-    background-color: rgb(20, 20, 20);
-}
-
-.div-card-comprar{
-    text-align: center;
-    background-color: rgb(43, 35, 100);
-    color: white;
-    height: 30px;
-    cursor: pointer;
-    padding-top: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.div-card-comprar:hover{
-    background-color: rgb(77, 25, 126);
-}
-
-.div-card-comprado{
-    background-color: rgb(0, 95, 0);
-}
-
-.div-card-comprado:hover{
-    background-color: rgb(0, 95, 0);
 }
