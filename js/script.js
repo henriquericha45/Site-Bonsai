@@ -67,3 +67,19 @@ function comprar(id){
     montarCardProdutos();
 
 }
+
+var array = [];
+
+function printar() {
+    var musica = document.getElementById("idInput").value;
+    if (musica!="") {
+        array.push(" " + musica + " ");
+    }
+
+    document.getElementById("idDiv").innerHTML = "";
+
+    for (var i = 0; i<array.length; i++) {
+        document.getElementById("idDiv").innerHTML += array[i] + "<br>";
+    }
+    console.log(array);
+}
