@@ -16,10 +16,6 @@ function cadastrar() {
     if (localStorage.length > 0) {
         var myItem = JSON.parse(localStorage.getItem("usuario"));
         listaUsuarios = myItem;
-        console.log(myItem);
-        console.log(myItem.length);
-
-        console.log(myItem[0][2]);
 
         for (var i=0; i<myItem.length; i++) {
             if(email==myItem[i][2]){
@@ -29,19 +25,6 @@ function cadastrar() {
                 idUsuarioExiste = true;
             }
         }
-
-        /*
-        for (var i=0; i<myItem.length; i++) {
-            emails.push(myItem[i][2]);
-            idUsuarios.push(myItem[i][3]);
-        }
-        
-        for (var i=0; i<=emails.length; i++) {
-            if(email==emails[i]){
-                emailExiste = true;
-            }
-        }
-        */
     }
     if (!emailExiste) {
         if (!idUsuarioExiste) {
@@ -57,8 +40,6 @@ function cadastrar() {
                     usuario.push(senha);
                 
                     listaUsuarios.push(usuario);
-
-                    console.log("ListaUsuarios: "+listaUsuarios);
             
                     window.localStorage.setItem("usuario", JSON.stringify(listaUsuarios));
             

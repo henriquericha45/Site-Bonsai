@@ -206,7 +206,16 @@ a {
     color: white;
   }
 
-  .area-pagina {
+.div-tabela {
+    padding-top: 70px;
+}
+
+.div-tabela h1 {
+    color: white;
+}
+
+.area-pagina {
     background-color: rgb(40, 40, 40);
-    height: 650px;
+    height: 70%;
+    width: 100%;
 }
