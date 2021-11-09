@@ -20,7 +20,10 @@ function cadastrar() {
         listaUsuarios.push(usuario);
 
         window.localStorage.setItem("usuario", JSON.stringify(listaUsuarios));
+
+        alert("Cadastro realizado com sucesso!");
     } else {
+        alert("Todos os campos devem ser preenchidos!");
         console.log("Algum campo está vazio!");
     }
 

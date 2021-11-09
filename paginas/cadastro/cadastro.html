@@ -2,6 +2,9 @@
     <head>
         <meta charset="UTF-8">
 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <script src="js/script.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css2/estilos.css">
@@ -9,65 +12,86 @@
     </head>
     <body>
 		<div class="cabecalho">
-            <b>Houva o que houver, seje feliz!</b>
+			<b>Houva o que houver, seje feliz!</b>
+		</div>
+		<div class="header">
+			<a class="logo" href="../../index.html"></a>
+			<nav class="container">
+				<ul class="menu">
+					<li><a href="../../index.html"> Início</a></li>
+					<li><a href="../../index.html">Envios</a></li>
+					<li><a href="https://www.facebook.com/henrique.richa">Facebook</a></li>
+					<li><a href="https://www.instagram.com/h_richa">Instagram</a></li>
+					<li><a href="../../paginas/login/login.html">Login</a></li>
+					<li><a href="../../paginas/cadastro/cadastro.html">Cadastro</a></li>
+				</ul>
+			</nav>
+			<div class="dropdown sub-menu">
+				<button class="dropbtn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+					</svg>
+				</button>
+				<div class="dropdown-content">
+				  <a href="../../paginas/login/login.html">Login</a>
+				  <a href="#">Busca</a>
+				  <a href="#">Carrinho</a>
+				</div>
+			  </div>
+		</div>
+		<div class="">
+			<center>
+				<table>
+					<tr>
+						<td> 
+							<input class="campo" type="text" placeholder="Nome" id="nome"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="campo" type="text" placeholder="Sobrenome" id="sobrenome"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="campo" type="text" placeholder="E-mail" id="email"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="campo" type="text" placeholder="Usuário" id="idUsuario"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="campo" type="password" placeholder="Senha" id="senha"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="campo" type="password" placeholder="Confirmar Senha" id="confirmarSenha"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="cadastrar()" class="botao">Cadastrar</button>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		<div class="div-endereco-contato">
+            <address>
+                Site feito por <a href="henriquericha@hotmail.com">Henrique Richa</a>.<br>
+                R. Imac. Conceição, 1155 - Prado Velho, Curitiba - PR, 80215-901<br>
+                Brasil
+            </address>
         </div>
-        <div class="header">
-            <a class="logo" href="../../index.html"></a>
-            <nav class="container">
-                <ul class="menu">
-                    <li><a href="../../index.html"> Início</a></li>
-                    <li><a href="../../index.html">Envios</a></li>
-                    <li><a href="https://www.facebook.com/henrique.richa">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/h_richa">Instagram</a></li>
-                    <li><a href="../../paginas/login/login.html">Login</a></li>
-                </ul>
-            </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+        <div class="rodape">
+                <a href="https://www.facebook.com/henrique.richa/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/h_richa" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/henrique-richa-1a1b8a159/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/h_richa/" class="fa fa-instagram"></a>
         </div>
-		<center>
-			<br><br><br>
-			<table>
-				<tr>
-					<td> 
-						<input class="campo" type="text" placeholder="Nome" id="nome"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input class="campo" type="text" placeholder="Sobrenome" id="sobrenome"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input class="campo" type="text" placeholder="E-mail" id="email"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input class="campo" type="text" placeholder="Usuário" id="idUsuario"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input class="campo" type="password" placeholder="Senha" id="senha"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input class="campo" type="password" placeholder="Confirmar Senha" id="confirmarSenha"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-                        <button onclick="cadastrar()" class="botao">Cadastrar</button>
-					</td>
-				</tr>
-			</table>
-		</center>
-
-
-
     </body>
 </html>
