@@ -12,8 +12,7 @@ var listaProdutos = [[0, 'Jabuticaba Sabará', '20', 'bonsai1.jpeg', false],
 var carrinho = [];
 
 window.onload = function(){
-    montarCardProdutos();
-}
+    montarCardProdutos();}
 
 function montarCardProdutos(){
 

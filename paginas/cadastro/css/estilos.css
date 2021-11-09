@@ -1,0 +1,223 @@
+body {
+    margin: 0px;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.header {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    padding: 20px;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: #0097A7;
+}
+
+.botao-cabecalho {
+    background-color: rgb(20, 20, 20);
+    border: none;
+}
+
+.container {
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+    background-image: url(/imagens/logo_bonsai.png);
+    background-color: rgb(20, 20, 20);
+}
+
+.sub-menu {
+    margin-right: 50px;
+}
+
+.dropbtn {
+    background-color: rgb(20,20,20);
+    color: white;
+    padding: 5px;
+    border: none;
+}
+  
+.dropdown {
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+      background-color: #ddd;
+      border-radius: 10px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #0097A7;
+    border-radius: 10px;
+}
+
+.div-endereco-contato {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.rodape {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #881288;
+    color: white;
+  }
+
+  
+.campo {
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+}
+
+.campo-erro {
+    border: solid 1px #FA5858;
+    color: #FA5858;
+}
+
+.botao {
+    background-color: #088a68;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.botao button:hover {
+    background-color: #04B486;
+}
+
+.div-tabela {
+    padding-top: 70px;
+}
+
+.div-tabela h1 {
+    color: white;
+}
+
+.area-pagina {
+    background-color: rgb(40, 40, 40);
+    height: 70%;
+    width: 100%;
+}
