@@ -10,21 +10,26 @@ function cadastrar() {
 
     var usuario = [];
     
-    if (nome != "" && sobrenome != "" && email != "" && idUsuario != "" && senha != "" && confirmarSenha == senha) {
-        usuario.push(nome);
-        usuario.push(sobrenome);
-        usuario.push(email);
-        usuario.push(idUsuario);
-        usuario.push(senha);
+    if (nome != "" && sobrenome != "" && email != "" && idUsuario != "" && senha != "" && confirmarSenha != "") {
+        if (confirmarSenha == senha) {
+            usuario.push(nome);
+            usuario.push(sobrenome);
+            usuario.push(email);
+            usuario.push(idUsuario);
+            usuario.push(senha);
+        
+            listaUsuarios.push(usuario);
     
-        listaUsuarios.push(usuario);
-
-        window.localStorage.setItem("usuario", JSON.stringify(listaUsuarios));
-
-        alert("Cadastro realizado com sucesso!");
+            window.localStorage.setItem("usuario", JSON.stringify(listaUsuarios));
+    
+            alert("Cadastro realizado com sucesso!");
+        } else {
+            alert("Senhas diferentes!");
+        }
     } else {
         alert("Todos os campos devem ser preenchidos!");
-        console.log("Algum campo está vazio!");
+            console.log("Algum campo está vazio!");
     }
+    
 
 }
