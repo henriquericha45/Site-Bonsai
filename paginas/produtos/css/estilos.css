@@ -172,7 +172,86 @@ a {
     background: #007bb5;
     color: white;
   }
-  .fa-instagram {
+.fa-instagram {
     background: #881288;
     color: white;
-  }
+}
+
+  .area-pagina {
+    background-color: rgb(40, 40, 40);
+    height: 70%;
+    width: 100%;
+}
+
+.area-pagina h1 {
+    color: white;
+}
+
+#divProdutos{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-card{
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 10px;
+    float: left;
+    margin-left: 5px;
+    border: solid 2px white;
+}
+
+.div-card-img img{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div-card-descricao{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(30, 30, 30);
+}
+
+.div-card-preco{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(20, 20, 20);
+}
+
+.div-card-comprar{
+    text-align: center;
+    background-color: rgb(43, 35, 100);
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.div-card-comprar:hover{
+    background-color: rgb(77, 25, 126);
+}
+
+.div-card-comprado{
+    background-color: rgb(0, 95, 0);
+}
+
+.div-card-comprado:hover{
+    background-color: rgb(0, 95, 0);
+}

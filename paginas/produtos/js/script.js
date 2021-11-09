@@ -20,24 +20,24 @@ function montarCardProdutos(){
     document.getElementById("divProdutos").innerHTML = "";
 
 
-    for(var i = 0; i < maisVendidos.length; i++)
+    for(var i = 0; i < listaProdutos.length; i++)
     {
         var conteudo = "";
         conteudo += '<div class="div-card" >';
         conteudo += '<div class="div-card-img">';
-        conteudo += '<img src="imagens/' + maisVendidos[i][3] + '" />';
+        conteudo += '<img src="imagens/' + listaProdutos[i][3] + '" />';
         conteudo += '</div>';
         conteudo += '<div class="div-card-descricao">';
-        conteudo += maisVendidos[i][1];
+        conteudo += listaProdutos[i][1];
         conteudo += '</div>';
         conteudo += '<div class="div-card-preco">';
         conteudo += 'R$ ';
-        conteudo += maisVendidos[i][2];
+        conteudo += listaProdutos[i][2];
         conteudo += '</div>';
 
-        if(maisVendidos[i][4] == false)
+        if(listaProdutos[i][4] == false)
         {
-            conteudo += '<div class="div-card-comprar"  onclick="comprar(' + maisVendidos[i][0] + ')"  >';
+            conteudo += '<div class="div-card-comprar"  onclick="comprar(' + listaProdutos[i][0] + ')"  >';
             conteudo += 'Comprar';
             conteudo += '</div>';
         }
@@ -58,9 +58,9 @@ function montarCardProdutos(){
 
 function comprar(id){
 
-    maisVendidos[id][4] = true;
+    listaProdutos[id][4] = true;
     
-    carrinho.push(maisVendidos[id]);
+    carrinho.push(listaProdutos[id]);
 
     window.localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
