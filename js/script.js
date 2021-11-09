@@ -71,9 +71,9 @@ function comprar(id){
 var array = [];
 
 function printar() {
-    var musica = document.getElementById("idInput").value;
-    if (musica!="") {
-        array.push(" " + musica + " ");
+    var depoimento = document.getElementById("idInput").value;
+    if (depoimento!="") {
+        array.push(" " + depoimento + " ");
     }
 
     document.getElementById("idDiv").innerHTML = "";
@@ -82,4 +82,22 @@ function printar() {
         document.getElementById("idDiv").innerHTML += array[i] + "<br>";
     }
     console.log(array);
+}
+
+function printarDepoimento(){
+
+    var depoimento = document.getElementById("idDepoimento").value;
+
+    if (depoimento!="") {
+        array.push(" " + depoimento + " ");
+    }
+    
+    var conteudo = "";
+    conteudo += '<div class="box-depoimento">';
+    conteudo += depoimento;
+    conteudo += '</div>';       
+    
+    if(depoimento != "") {
+        document.getElementById("idDiv").innerHTML += conteudo;
+    }
 }
